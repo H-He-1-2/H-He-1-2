@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>一些interesting问题s :: H-He-1-2</title>
+    <link>https://H-He-1-2.github.io/%E4%B8%80%E4%BA%9Binteresting%E9%97%AE%E9%A2%98/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 21 May 2026 23:17:45 +0800</lastBuildDate>
+    <atom:link href="https://H-He-1-2.github.io/%E4%B8%80%E4%BA%9Binteresting%E9%97%AE%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小CaO睡觉</title>
+      <link>https://H-He-1-2.github.io/%E4%B8%80%E4%BA%9Binteresting%E9%97%AE%E9%A2%98/%E5%B0%8Fcao%E7%9D%A1%E8%A7%89/index.html</link>
+      <pubDate>Thu, 21 May 2026 23:17:45 +0800</pubDate>
+      <guid>https://H-He-1-2.github.io/%E4%B8%80%E4%BA%9Binteresting%E9%97%AE%E9%A2%98/%E5%B0%8Fcao%E7%9D%A1%E8%A7%89/index.html</guid>
+      <description>小CaO的“睡觉回血”之谜 小CaO最近发现自己的身体里有一种神奇的活性物质（我们叫它 物质M 吧）。它的浓度变化居然和自己的作息严格同步：&#xA;清醒时：身体只“消耗”不“合成”，物质M会自然衰减，半衰期固定为 $T$。 睡觉时：身体开启“自动回血”模式，会以恒定速率 $R$ 持续生成物质M。但注意！衰变过程并没休息，生成和衰变是同时进行、线性叠加的。 小CaO每天清醒时长为 $\tau_a$，睡眠时长为 $\tau_s$，就这样日复一日地循环。经过很长一段时间后，物质M的浓度不再忽高忽低乱跳，而是进入了稳定的“周期性波浪”状态。&#xA;为了摸清规律，小CaO偷偷记录了一组观测数据（全部用字母表示，不掺具体数字）：&#xA;观测项 符号 说明 清醒期时长 $\tau_a$ 每天不睡觉的时间 睡眠期时长 $\tau_s$ 每天睡觉的时间 物质半衰期 $T$ 清醒时衰减的半衰期 周期峰值浓度 $N_p$ 睡眠结束时达到的最高点 周期谷值浓度 $N_v$ 清醒开始时（刚睡醒）的最低点 谷值瞬时衰变速率 $D_v$ 在浓度最低那一刻，测得的纯衰变速度 💡 提示：衰变速率与浓度成正比。若记衰变常数为 $\lambda$，则 $\lambda = \dfrac{\ln 2}{T}$，且任意时刻的衰变速率为 $\lambda \times \text{当前浓度}$。&#xA;小CaO的三个疑问 峰值和谷值到底差多少？&#xA;在稳定状态下，峰值 $N_p$ 与谷值 $N_v$ 的比值 $\dfrac{N_p}{N_v}$ 是多少？</description>
+    </item>
+  </channel>
+</rss>
