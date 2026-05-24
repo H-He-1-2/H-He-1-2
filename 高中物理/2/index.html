@@ -51,22 +51,22 @@
 假设你开车从家到学校，距离 10 公里，花了 15 分钟（0.25 小时）。你可以算出一个速度： $$ \bar{v} = \frac{\Delta x}{\Delta t} = \frac{10 \text{ km}}{0.25 \text{ h}} = 40 \text{ km/h} $$ 这就是平均速度。但费曼指出，这并不能描述你“在路上”的真实状态。你可能在路口等了红灯（速度为0），也可能在快速路上开到了 80 km/h。">
     <meta itemprop="datePublished" content="2026-05-24T07:44:37+08:00">
     <meta itemprop="dateModified" content="2026-05-24T07:44:37+08:00">
-    <meta itemprop="wordCount" content="270">
+    <meta itemprop="wordCount" content="360">
     <title>从芝诺悖论到微积分：重新认识速度与加速度 :: H-He-1-2</title>
-    <link href="/css/auto-complete/auto-complete.min.css?1779580301" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1779580301" defer></script>
-    <script src="/js/search-lunr.min.js?1779580301" defer></script>
-    <script src="/js/search.min.js?1779580301" defer></script>
+    <link href="/css/auto-complete/auto-complete.min.css?1779580894" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1779580894" defer></script>
+    <script src="/js/search-lunr.min.js?1779580894" defer></script>
+    <script src="/js/search.min.js?1779580894" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1779580301";
+      window.relearn.index_js_url="/searchindex.en.js?1779580894";
     </script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/css/theme.min.css?1779580301" rel="stylesheet">
-    <link href="/css/format-html.min.css?1779580301" rel="stylesheet" id="R-format-style">
+    <link href="/css/theme.min.css?1779580894" rel="stylesheet">
+    <link href="/css/format-html.min.css?1779580894" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -141,7 +141,8 @@
         <li><a href="#直线运动中的方向直觉">直线运动中的方向直觉</a></li>
       </ul>
     </li>
-    <li><a href="#4-从微积分回到高中公式">4. 从微积分回到高中公式</a></li>
+    <li><a href="#4-如何求距离把-sum-拉长就是-int">4. 如何求距离：把 $\sum$ 拉长就是 $\int$</a></li>
+    <li><a href="#5-从微积分回到高中公式">5. 从微积分回到高中公式</a></li>
     <li><a href="#5-结语从直觉到严谨">5. 结语：从直觉到严谨</a></li>
   </ul>
 </nav>
@@ -245,8 +246,27 @@ $$</p>
 </li>
 </ul>
 <hr>
-<h2 id="4-从微积分回到高中公式">4. 从微积分回到高中公式<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
-<p>在高中物理中，我们背诵了大量的匀变速直线运动公式：</p>
+<hr>
+<h2 id="4-如何求距离把-sum-拉长就是-int">4. 如何求距离：把 $\sum$ 拉长就是 $\int$<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>前面我们讨论了已知位置 $x(t)$ 如何求速度 $v(t)$（求导）。但在现实中，我们往往面临相反的问题：<strong>已知速度，如何求距离？</strong></p>
+<p>想象你蒙着眼睛坐在副驾驶上，手里只有一个速度计和一个秒表。你记录下了每一瞬间的速度，并拟合出了一个速度函数 $v(t)$。现在车停了，你该如何算出这趟旅程开了多远？</p>
+<p>如果速度是恒定的，距离就是 $x = v \cdot t$。但速度是变化的，怎么办？</p>
+<p><strong>第一步：切碎时间（微元法）</strong>
+把总时间 $t$ 切成无数个极短的小时间段 $\Delta t$。在每一个极短的 $\Delta t$ 内，速度来不及发生明显变化，我们可以近似认为它是恒定的 $v(t_i)$。
+那么在这一小段时间内，走过的微小距离就是：
+$$ \Delta x_i \approx v(t_i) \cdot \Delta t $$</p>
+<p><strong>第二步：全部加起来（求和）</strong>
+把所有小段距离加起来，就得到了总距离的近似值：
+$$ x \approx \sum_{i=1}^{n} v(t_i) \Delta t $$</p>
+<p><strong>第三步：让 $\Delta t$ 趋于 0（积分）</strong>
+为了让结果绝对精确，我们让时间段 $\Delta t$ 无限变小（$\Delta t \to 0$），同时段数 $n$ 趋于无穷大。
+在数学上，当离散的小块变成连续的无穷小量时，<strong>把求和符号 $\sum$（Sigma）稍微“拉长”一点，它就变成了积分符号 $\int$（Integral）</strong>。</p>
+<p>于是，我们得到了微积分基本定理在物理中最优美的表达：
+$$ x = \lim_{\Delta t \to 0} \sum_{i=1}^{n} v(t_i) \Delta t = \int_{0}^{t} v(\tau) , d\tau $$</p>
+<p>这就是积分的物理直观：<strong>积分不是枯燥的“反导数”计算，它是无数个微小量的连续累加。</strong> 在几何上，它恰好等于 $v-t$ 图像中，速度曲线与时间轴所围成的<strong>面积</strong>。这也是高中物理经常用的“图像法”的底层逻辑。</p>
+<hr>
+<h2 id="5-从微积分回到高中公式">5. 从微积分回到高中公式<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>搞清了导数（求速度/加速度）和积分（求距离），我们再来看高中物理中背诵的匀变速直线运动公式：</p>
 <ol>
 <li>$v = v_0 + at$</li>
 <li>$x = v_0t + \frac{1}{2}at^2$</li>
@@ -255,12 +275,12 @@ $$</p>
 <p>很多学生以为这些是物理学的“公理”。但实际上，<strong>它们只是微积分在“加速度 $a$ 为常数”这一特殊条件下的推论。</strong></p>
 <p>让我们用微积分重新推导一次：
 已知 $a(t) = a$（常数）。
-对时间积分一次，得到速度：
+对时间积分一次（即把 $a$ 累加起来），得到速度：
 $$
 v(t) = \int a , dt = at + C_1
 $$
 代入初始条件 $t=0$ 时 $v=v_0$，得到 $C_1 = v_0$，即 <strong>$v = v_0 + at$</strong>。</p>
-<p>再对时间积分一次，得到位置：
+<p>再对时间积分一次（即把 $v$ 累加起来），得到位置：
 $$
 x(t) = \int (v_0 + at) , dt = v_0t + \frac{1}{2}at^2 + C_2
 $$
@@ -370,11 +390,11 @@ $$
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1779580301"></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1779580894"></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{}");
     </script>
-    <script src="/js/theme.min.js?1779580301" defer></script>
+    <script src="/js/theme.min.js?1779580894" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>
