@@ -6,8 +6,15 @@
     <description></description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 24 May 2026 07:44:37 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 22:41:13 +0800</lastBuildDate>
     <atom:link href="https://H-He-1-2.github.io/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>走出直线：平面运动与平面坐标系</title>
+      <link>https://H-He-1-2.github.io/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/3/index.html</link>
+      <pubDate>Sun, 24 May 2026 22:41:13 +0800</pubDate>
+      <guid>https://H-He-1-2.github.io/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/3/index.html</guid>
+      <description>(with ai agent)&#xA;0. 走出直线：当世界变成二维 在前面的笔记中，我们把质点限制在了一条直线上。在那里，运动只有“向前”和“向后”，我们用正负号就能搞定方向。&#xA;但现实世界是广阔的。想象你驾驶着一辆汽车在平原上行驶，你不仅可以踩油门和刹车，还可以转动方向盘。当运动拓展到二维平面（甚至三维空间）时，一维的标量（带正负号的数字）就不够用了，这是我们就要引入一个工具：矢量（Vector）。&#xA;在平面运动中，一个极其重要的物理直觉是运动的独立性（伽利略首创）：&#xA;一个复杂的平面运动，可以看作是几个简单直线运动的“叠加”。你在 $x$ 方向的运动，完全不会影响你在 $y$ 方向的运动。&#xA;为了精确描述这种叠加，我们需要在平面上铺设“网格”——也就是坐标系。面对不同的物理场景，选择合适的坐标系，能让解题从“地狱难度”瞬间降到“白给难度”。&#xA;1. 直角坐标系 (Cartesian)：最稳妥的“正交网格” 这是我们在初中和高中最早接触、也是最万能的坐标系。&#xA;物理与数学表达 我们在空间中固定一个原点 $O$，画出两根互相垂直的轴 $x$ 和 $y$。位置矢量可以写为： $$ \vec{r}(t) = x(t)\hat{i} + y(t)\hat{j} $$ 其中 $\hat{i}$ 和 $\hat{j}$ 是沿着 $x$ 轴和 $y$ 轴的基矢量（单位向量）。</description>
+    </item>
     <item>
       <title>从芝诺悖论到微积分：重新认识速度与加速度</title>
       <link>https://H-He-1-2.github.io/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/2/index.html</link>

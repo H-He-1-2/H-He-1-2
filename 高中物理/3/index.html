@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html id="R-html" lang="zh-cn" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.161.1">
+    <meta name="generator" content="Relearn 9.0.3">
+    <meta name="description" content="(with ai agent)
+0. 走出直线：当世界变成二维 在前面的笔记中，我们把质点限制在了一条直线上。在那里，运动只有“向前”和“向后”，我们用正负号就能搞定方向。
+但现实世界是广阔的。想象你驾驶着一辆汽车在平原上行驶，你不仅可以踩油门和刹车，还可以转动方向盘。当运动拓展到二维平面（甚至三维空间）时，一维的标量（带正负号的数字）就不够用了，这是我们就要引入一个工具：矢量（Vector）。
+在平面运动中，一个极其重要的物理直觉是运动的独立性（伽利略首创）：
+一个复杂的平面运动，可以看作是几个简单直线运动的“叠加”。你在 $x$ 方向的运动，完全不会影响你在 $y$ 方向的运动。
+为了精确描述这种叠加，我们需要在平面上铺设“网格”——也就是坐标系。面对不同的物理场景，选择合适的坐标系，能让解题从“地狱难度”瞬间降到“白给难度”。
+1. 直角坐标系 (Cartesian)：最稳妥的“正交网格” 这是我们在初中和高中最早接触、也是最万能的坐标系。
+物理与数学表达 我们在空间中固定一个原点 $O$，画出两根互相垂直的轴 $x$ 和 $y$。位置矢量可以写为： $$ \vec{r}(t) = x(t)\hat{i} &#43; y(t)\hat{j} $$ 其中 $\hat{i}$ 和 $\hat{j}$ 是沿着 $x$ 轴和 $y$ 轴的基矢量（单位向量）。">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="走出直线：平面运动与平面坐标系 :: H-He-1-2">
+    <meta name="twitter:description" content="(with ai agent)
+0. 走出直线：当世界变成二维 在前面的笔记中，我们把质点限制在了一条直线上。在那里，运动只有“向前”和“向后”，我们用正负号就能搞定方向。
+但现实世界是广阔的。想象你驾驶着一辆汽车在平原上行驶，你不仅可以踩油门和刹车，还可以转动方向盘。当运动拓展到二维平面（甚至三维空间）时，一维的标量（带正负号的数字）就不够用了，这是我们就要引入一个工具：矢量（Vector）。
+在平面运动中，一个极其重要的物理直觉是运动的独立性（伽利略首创）：
+一个复杂的平面运动，可以看作是几个简单直线运动的“叠加”。你在 $x$ 方向的运动，完全不会影响你在 $y$ 方向的运动。
+为了精确描述这种叠加，我们需要在平面上铺设“网格”——也就是坐标系。面对不同的物理场景，选择合适的坐标系，能让解题从“地狱难度”瞬间降到“白给难度”。
+1. 直角坐标系 (Cartesian)：最稳妥的“正交网格” 这是我们在初中和高中最早接触、也是最万能的坐标系。
+物理与数学表达 我们在空间中固定一个原点 $O$，画出两根互相垂直的轴 $x$ 和 $y$。位置矢量可以写为： $$ \vec{r}(t) = x(t)\hat{i} &#43; y(t)\hat{j} $$ 其中 $\hat{i}$ 和 $\hat{j}$ 是沿着 $x$ 轴和 $y$ 轴的基矢量（单位向量）。">
+    <meta property="og:url" content="https://H-He-1-2.github.io/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/3/index.html">
+    <meta property="og:site_name" content="H-He-1-2">
+    <meta property="og:title" content="走出直线：平面运动与平面坐标系 :: H-He-1-2">
+    <meta property="og:description" content="(with ai agent)
+0. 走出直线：当世界变成二维 在前面的笔记中，我们把质点限制在了一条直线上。在那里，运动只有“向前”和“向后”，我们用正负号就能搞定方向。
+但现实世界是广阔的。想象你驾驶着一辆汽车在平原上行驶，你不仅可以踩油门和刹车，还可以转动方向盘。当运动拓展到二维平面（甚至三维空间）时，一维的标量（带正负号的数字）就不够用了，这是我们就要引入一个工具：矢量（Vector）。
+在平面运动中，一个极其重要的物理直觉是运动的独立性（伽利略首创）：
+一个复杂的平面运动，可以看作是几个简单直线运动的“叠加”。你在 $x$ 方向的运动，完全不会影响你在 $y$ 方向的运动。
+为了精确描述这种叠加，我们需要在平面上铺设“网格”——也就是坐标系。面对不同的物理场景，选择合适的坐标系，能让解题从“地狱难度”瞬间降到“白给难度”。
+1. 直角坐标系 (Cartesian)：最稳妥的“正交网格” 这是我们在初中和高中最早接触、也是最万能的坐标系。
+物理与数学表达 我们在空间中固定一个原点 $O$，画出两根互相垂直的轴 $x$ 和 $y$。位置矢量可以写为： $$ \vec{r}(t) = x(t)\hat{i} &#43; y(t)\hat{j} $$ 其中 $\hat{i}$ 和 $\hat{j}$ 是沿着 $x$ 轴和 $y$ 轴的基矢量（单位向量）。">
+    <meta property="og:locale" content="zh_cn">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="高中物理">
+    <meta property="article:published_time" content="2026-05-24T22:41:13+08:00">
+    <meta property="article:modified_time" content="2026-05-24T22:41:13+08:00">
+    <meta itemprop="name" content="走出直线：平面运动与平面坐标系 :: H-He-1-2">
+    <meta itemprop="description" content="(with ai agent)
+0. 走出直线：当世界变成二维 在前面的笔记中，我们把质点限制在了一条直线上。在那里，运动只有“向前”和“向后”，我们用正负号就能搞定方向。
+但现实世界是广阔的。想象你驾驶着一辆汽车在平原上行驶，你不仅可以踩油门和刹车，还可以转动方向盘。当运动拓展到二维平面（甚至三维空间）时，一维的标量（带正负号的数字）就不够用了，这是我们就要引入一个工具：矢量（Vector）。
+在平面运动中，一个极其重要的物理直觉是运动的独立性（伽利略首创）：
+一个复杂的平面运动，可以看作是几个简单直线运动的“叠加”。你在 $x$ 方向的运动，完全不会影响你在 $y$ 方向的运动。
+为了精确描述这种叠加，我们需要在平面上铺设“网格”——也就是坐标系。面对不同的物理场景，选择合适的坐标系，能让解题从“地狱难度”瞬间降到“白给难度”。
+1. 直角坐标系 (Cartesian)：最稳妥的“正交网格” 这是我们在初中和高中最早接触、也是最万能的坐标系。
+物理与数学表达 我们在空间中固定一个原点 $O$，画出两根互相垂直的轴 $x$ 和 $y$。位置矢量可以写为： $$ \vec{r}(t) = x(t)\hat{i} &#43; y(t)\hat{j} $$ 其中 $\hat{i}$ 和 $\hat{j}$ 是沿着 $x$ 轴和 $y$ 轴的基矢量（单位向量）。">
+    <meta itemprop="datePublished" content="2026-05-24T22:41:13+08:00">
+    <meta itemprop="dateModified" content="2026-05-24T22:41:13+08:00">
+    <meta itemprop="wordCount" content="348">
+    <title>走出直线：平面运动与平面坐标系 :: H-He-1-2</title>
+    <link href="/css/auto-complete/auto-complete.min.css?1779720170" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1779720170" defer></script>
+    <script src="/js/search-lunr.min.js?1779720170" defer></script>
+    <script src="/js/search.min.js?1779720170" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/searchindex.en.js?1779720170";
+    </script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=[];
+    </script>
+    <link href="/css/theme.min.css?1779720170" rel="stylesheet">
+    <link href="/css/format-html.min.css?1779720170" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86\/3\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='https:\/\/H-He-1-2.github.io';
+      window.relearn.disableInlineCopyToClipboard=false;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `复制文本到剪贴板`;
+      window.T_Copied_to_clipboard = `文本已复制到剪贴板！`;
+      window.T_Link_copied_to_clipboard = `链接已复制到剪贴板！`;
+      window.T_Reset_view = `重置视图`;
+      window.T_View_reset = `查看重置！`;
+      window.T_No_results_found = `找不到"{0}"的结果`;
+      window.T_N_results_found = `为"{0}"找到 {1} 个结果`;
+      window.T_Browser_unsupported_feature = `此浏览器不支持此功能`;
+      // variant stuff
+      window.relearn.themevariants = [ 'auto' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support html" data-origin="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/3/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="导航 (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+            <div class="topbar-button topbar-button-toc default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="目录 (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-table-list"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#0-走出直线当世界变成二维">0. 走出直线：当世界变成二维</a></li>
+    <li><a href="#1-直角坐标系-cartesian最稳妥的正交网格">1. 直角坐标系 (Cartesian)：最稳妥的“正交网格”</a>
+      <ul>
+        <li><a href="#物理与数学表达">物理与数学表达</a></li>
+        <li><a href="#核心优势基矢量稳如泰山">核心优势：基矢量“稳如泰山”</a></li>
+        <li><a href="#最佳适用场景受力恒定的运动">最佳适用场景：受力恒定的运动</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-极坐标系-polar以中心为尊">2. 极坐标系 (Polar)：以“中心”为尊</a>
+      <ul>
+        <li><a href="#物理与数学表达-1">物理与数学表达</a></li>
+        <li><a href="#核心难点基矢量随风飘摇">核心难点：基矢量“随风飘摇”</a></li>
+        <li><a href="#最佳适用场景有心力场与圆锥曲线">最佳适用场景：有心力场与圆锥曲线</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-自然坐标系-intrinsicnatural跟着感觉走">3. 自然坐标系 (Intrinsic/Natural)：跟着感觉走</a>
+      <ul>
+        <li><a href="#物理与数学表达-2">物理与数学表达</a></li>
+        <li><a href="#核心物理直觉大小与方向的解耦">核心物理直觉：大小与方向的解耦</a></li>
+        <li><a href="#最佳适用场景已知轨迹的约束运动">最佳适用场景：已知轨迹的约束运动</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-总结坐标系的选择哲学">4. 总结：坐标系的“选择哲学”</a></li>
+    <li><a href="#5-结语数学是物理的脚手架">5. 结语：数学是物理的脚手架</a></li>
+  </ul>
+</nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">引导页</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/index.html"><span itemprop="name">高中物理</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">走出直线：平面运动与平面坐标系</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-prev default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/index.html" title="高中物理 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-next default-animation" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><a href="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/2/index.html" title="从芝诺悖论到微积分：重新认识速度与加速度 (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a></span>
+            </div>
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="更多"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable 高中物理" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="走出直线平面运动与平面坐标系">走出直线：平面运动与平面坐标系</h1>
+
+<p>(with ai agent)</p>
+<hr>
+<h2 id="0-走出直线当世界变成二维">0. 走出直线：当世界变成二维<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>在前面的笔记中，我们把质点限制在了一条直线上。在那里，运动只有“向前”和“向后”，我们用正负号就能搞定方向。</p>
+<p>但现实世界是广阔的。想象你驾驶着一辆汽车在平原上行驶，你不仅可以踩油门和刹车，还可以<strong>转动方向盘</strong>。当运动拓展到二维平面（甚至三维空间）时，一维的标量（带正负号的数字）就不够用了，这是我们就要引入一个工具：<strong>矢量（Vector）</strong>。</p>
+<p>在平面运动中，一个极其重要的物理直觉是<strong>运动的独立性</strong>（伽利略首创）：</p>
+<blockquote>
+<p>一个复杂的平面运动，可以看作是几个简单直线运动的“叠加”。你在 $x$ 方向的运动，完全不会影响你在 $y$ 方向的运动。</p>
+</blockquote>
+<p>为了精确描述这种叠加，我们需要在平面上铺设“网格”——也就是<strong>坐标系</strong>。面对不同的物理场景，选择合适的坐标系，能让解题从“地狱难度”瞬间降到“白给难度”。</p>
+<hr>
+<h2 id="1-直角坐标系-cartesian最稳妥的正交网格">1. 直角坐标系 (Cartesian)：最稳妥的“正交网格”<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>这是我们在初中和高中最早接触、也是最万能的坐标系。</p>
+<h3 id="物理与数学表达">物理与数学表达<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>我们在空间中固定一个原点 $O$，画出两根互相垂直的轴 $x$ 和 $y$。位置矢量可以写为：
+$$ \vec{r}(t) = x(t)\hat{i} + y(t)\hat{j} $$
+其中 $\hat{i}$ 和 $\hat{j}$ 是沿着 $x$ 轴和 $y$ 轴的<strong>基矢量</strong>（单位向量）。</p>
+<p>对时间求导，得到速度和加速度：
+$$ \vec{v}(t) = \dot{x}\hat{i} + \dot{y}\hat{j} = v_x\hat{i} + v_y\hat{j} $$
+$$ \vec{a}(t) = \ddot{x}\hat{i} + \ddot{y}\hat{j} = a_x\hat{i} + a_y\hat{j} $$
+<em>(注：物理学中常用字母上方加点 $\dot{x}$ 表示对时间求一阶导，两个点 $\ddot{x}$ 表示二阶导。)</em></p>
+<h3 id="核心优势基矢量稳如泰山">核心优势：基矢量“稳如泰山”<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>直角坐标系最大的优点是：<strong>$\hat{i}$ 和 $\hat{j}$ 的方向永远不变</strong>。无论质点跑到哪里，$x$ 轴和 $y$ 轴的方向都是固定的。因此，在求导时，我们只需要对坐标分量 $x(t)$ 和 $y(t)$ 求导，基矢量可以直接当成常数提出来。</p>
+<h3 id="最佳适用场景受力恒定的运动">最佳适用场景：受力恒定的运动<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>当物体受到的<strong>合力大小和方向都不变</strong>时（比如只受重力），直角坐标系是永远的神。</p>
+<ul>
+<li><strong>平抛/斜抛运动</strong>：把重力方向设为 $y$ 轴，初速度方向（或水平方向）设为 $x$ 轴。水平方向 $a_x=0$（匀速），竖直方向 $a_y=-g$（匀加速）。两个一维运动一组合，抛物线就出来了。</li>
+</ul>
+<details>
+<summary>🎓 大学衔接：三维拓展与“右手螺旋”（点击展开）</summary>
+<p>到了三维空间，我们加入 $z$ 轴和基矢量 $\hat{k}$。此时必须严格遵守<strong>右手定则</strong>：让右手四指从 $x$ 轴弯向 $y$ 轴，大拇指指向的就是 $z$ 轴正方向。
+在后续的“角动量”和“洛伦兹力”学习中，你会频繁遇到矢量的<strong>叉乘（Cross Product）</strong>，比如 $\vec{F} = q\vec{v} \times \vec{B}$。叉乘的结果是一个新矢量，其方向完全依赖于右手螺旋定则。如果一开始没建立好三维直角坐标系的直觉，后面会非常痛苦。</p>
+</details>
+<hr>
+<h2 id="2-极坐标系-polar以中心为尊">2. 极坐标系 (Polar)：以“中心”为尊<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>如果运动不是抛体，而是<strong>绕着某个中心点转</strong>（比如地球绕太阳、小球绕钉子做圆周运动），直角坐标系就会变得非常笨拙（$x$ 和 $y$ 都在做复杂的三角函数运动）。这时，我们需要极坐标系。</p>
+<h3 id="物理与数学表达-1">物理与数学表达<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>我们选定一个极点（中心），用<strong>距离 $r$</strong> 和<strong>角度 $\theta$</strong> 来描述位置：
+$$ \vec{r}(t) = r(t)\hat{e}_r $$
+这里出现了两个新的基矢量：</p>
+<ul>
+<li><strong>径向基矢量 $\hat{e}_r$</strong>：从极点指向质点。</li>
+<li><strong>横向基矢量 $\hat{e}_\theta$</strong>：垂直于 $\hat{e}_r$，指向 $\theta$ 增加的方向（逆时针）。</li>
+</ul>
+<h3 id="核心难点基矢量随风飘摇">核心难点：基矢量“随风飘摇”<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>这是高中生最容易栽跟头的地方！<strong>$\hat{e}<em>r$ 和 $\hat{e}</em>\theta$ 的方向不是固定的，它们会随着质点的位置变化而转动！</strong></p>
+<p>当质点移动时，不仅距离 $r$ 在变，基矢量的方向也在变。因此，对位置求导得到速度时，必须使用乘积求导法则：
+$$ \vec{v} = \frac{d}{dt}(r\hat{e}_r) = \dot{r}\hat{e}<em>r + r\dot{\hat{e}}<em>r $$
+经过数学推导（见折叠块），最终的速度公式为：
+$$ \vec{v} = \underbrace{\dot{r}}</em>{\text{径向速度}}\hat{e}<em>r + \underbrace{r\dot{\theta}}</em>{\text{横向速度}}\hat{e}</em>\theta $$</p>
+<ul>
+<li><strong>径向速度 $v_r = \dot{r}$</strong>：质点靠近或远离中心的速度。</li>
+<li><strong>横向速度 $v_\theta = r\omega$</strong>：质点绕中心旋转的线速度（高中圆周运动的 $v = \omega r$）。</li>
+</ul>
+<h3 id="最佳适用场景有心力场与圆锥曲线">最佳适用场景：有心力场与圆锥曲线<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>当物体受到的力<strong>始终指向（或背向）一个固定中心</strong>时（如万有引力、库仑力、绳子拉力），极坐标系是首选。开普勒行星运动定律的严格证明，就是在极坐标系下完成的。</p>
+<details>
+<summary>🚀 理论力学预警：对基矢量求导的“魔鬼细节”（点击展开）</summary>
+<p>为什么 $\dot{\hat{e}}<em>r = \dot{\theta}\hat{e}</em>\theta$？
+想象质点转过一个极小的角度 $\Delta \theta$。径向基矢量 $\hat{e}<em>r$ 也跟着转了 $\Delta \theta$。
+因为 $\hat{e}<em>r$ 是单位向量（长度为1），它尖端的位移弧长就是 $1 \cdot \Delta \theta$。当 $\Delta t \to 0$ 时，这个微小位移的方向恰好就是横向 $\hat{e}</em>\theta$ 的方向。
+所以 $\frac{d\hat{e}<em>r}{dt} = \lim \frac{\Delta \theta \hat{e}</em>\theta}{\Delta t} = \dot{\theta}\hat{e}</em>\theta$。
+同理可证 $\frac{d\hat{e}_\theta}{dt} = -\dot{\theta}\hat{e}_r$。
+把这个代入加速度求导，就会出现著名的<strong>科里奥利加速度项</strong> $2\dot{r}\dot{\theta}$。这是大学理论力学第一学期的“挂科重灾区”，现在理解了这个几何直观，大学就不怕了！</p>
+</details>
+<hr>
+<h2 id="3-自然坐标系-intrinsicnatural跟着感觉走">3. 自然坐标系 (Intrinsic/Natural)：跟着感觉走<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>前两种坐标系，原点都固定在空间的某个点上。但有时候，我们根本不关心质点离原点有多远，我们只关心：<strong>它沿着轨道跑得多快？它拐弯拐得多急？</strong></p>
+<p>这时，我们把坐标系的原点<strong>直接绑在质点上</strong>，跟着质点一起运动，这就是自然坐标系。</p>
+<h3 id="物理与数学表达-2">物理与数学表达<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>在质点所在的轨迹上，建立两个互相垂直的方向：</p>
+<ul>
+<li><strong>切向 $\hat{e}_\tau$ (或 $\hat{e}_t$)</strong>：沿着轨迹的切线方向，指向运动前方。</li>
+<li><strong>法向 $\hat{e}_n$</strong>：垂直于切线，<strong>始终指向轨迹凹侧</strong>（拐弯的内侧）。</li>
+</ul>
+<p>在这种坐标系下，速度永远只有切向分量（因为质点不能脱离轨道横向飞出去）：
+$$ \vec{v} = v \hat{e}<em>\tau $$
+而加速度则被完美地分解为两个具有明确物理意义的分量：
+$$ \vec{a} = a</em>\tau \hat{e}_\tau + a_n \hat{e}_n $$</p>
+<h3 id="核心物理直觉大小与方向的解耦">核心物理直觉：大小与方向的解耦<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li><strong>切向加速度 $a_\tau = \frac{dv}{dt}$</strong>：只负责改变速度的<strong>大小</strong>。$a_\tau &gt; 0$ 加速，$a_\tau &lt; 0$ 减速。</li>
+<li><strong>法向加速度 $a_n = \frac{v^2}{\rho}$</strong>：只负责改变速度的<strong>方向</strong>。这里的 $\rho$ 是轨迹在该点的<strong>曲率半径</strong>。只要轨迹弯曲（$\rho \neq \infty$），就一定有法向加速度（向心加速度）。</li>
+</ul>
+<h3 id="最佳适用场景已知轨迹的约束运动">最佳适用场景：已知轨迹的约束运动<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>当你面对<strong>圆周运动、过山车、绳球模型、汽车过拱桥</strong>等问题时，自然坐标系是降维打击。你不需要去分解重力和拉力在 $x$ 和 $y$ 方向的分量，只需直接列出：</p>
+<ul>
+<li>切向方程：$F_\tau = m \frac{dv}{dt}$ （管快慢）</li>
+<li>法向方程：$F_n = m \frac{v^2}{\rho}$ （管拐弯/向心力）</li>
+</ul>
+<details>
+<summary>💡 深度拓展：什么是“曲率半径” $\rho$？（点击展开）</summary>
+<p>在高中，我们只学过圆的向心加速度 $a_n = \frac{v^2}{R}$。但如果轨迹不是圆，而是一条随意的曲线（比如抛物线、椭圆）怎么办？
+微分几何告诉我们：在曲线上的任意一点，都可以找到一个与曲线在该点“最贴合”的圆，叫做<strong>密切圆（Osculating circle）</strong>。这个密切圆的半径，就是该点的<strong>曲率半径 $\rho$</strong>。</p>
+<ul>
+<li>直线可以看作半径 $\rho \to \infty$ 的圆，所以 $a_n = 0$（不拐弯）。</li>
+<li>曲线越弯曲，$\rho$ 越小，$a_n$ 越大（需要更大的向心力来拉住它）。
+自然坐标系将复杂的曲线运动，在每一个瞬间都“局部近似”为圆周运动，这是物理学中极其优雅的<strong>局部线性化/局部圆周化</strong>思想。</li>
+</ul>
+</details>
+<hr>
+<h2 id="4-总结坐标系的选择哲学">4. 总结：坐标系的“选择哲学”<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>在考场上或实际工程中，面对一个平面运动问题，该如何选择坐标系？请记住以下“看菜下饭”原则：</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">运动特征 / 受力特征</th>
+          <th style="text-align: left">推荐坐标系</th>
+          <th style="text-align: left">典型物理模型</th>
+          <th style="text-align: left">核心优势</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>受力恒定</strong>（如重力、匀强电场力），或初速度与力垂直。</td>
+          <td style="text-align: left"><strong>直角坐标系</strong> $(x, y)$</td>
+          <td style="text-align: left">平抛、斜抛、带电粒子在匀强电场中的偏转。</td>
+          <td style="text-align: left">运动方程解耦，$x$ 和 $y$ 独立计算，不用管基矢量变化。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>力指向固定中心</strong>（有心力），或运动具有明显的旋转对称性。</td>
+          <td style="text-align: left"><strong>极坐标系</strong> $(r, \theta)$</td>
+          <td style="text-align: left">行星绕日、圆锥摆、带电粒子绕点电荷运动。</td>
+          <td style="text-align: left">径向和横向物理意义明确，角动量守恒表达极简。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>轨迹已知</strong>，或物体被<strong>约束在轨道/绳子上</strong>，只关心沿轨道的运动和对轨道的压力。</td>
+          <td style="text-align: left"><strong>自然坐标系</strong> $(\tau, n)$</td>
+          <td style="text-align: left">圆周运动、过山车、单摆、汽车转弯。</td>
+          <td style="text-align: left">完美分离“改变速度大小”和“改变速度方向”的力，向心力方程一目了然。</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="5-结语数学是物理的脚手架">5. 结语：数学是物理的脚手架<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>从一维的直线，到二维的平面；从稳如泰山的直角坐标，到随风飘摇的极坐标，再到如影随形的自然坐标。</p>
+<p>我们引入这么多复杂的数学工具，绝不是为了把简单的物理问题复杂化，而是为了<strong>让数学的语言完美契合物理的直觉</strong>。</p>
+<ul>
+<li>当你看到平抛的铅球，你的脑海中应浮现出正交的 $x-y$ 网格；</li>
+<li>当你仰望绕地飞行的卫星，你的脑海中应浮现出以地球为极点的 $r-\theta$ 射线；</li>
+<li>当你坐在过山车上感受失重与超重，你的脑海中应浮现出紧贴轨道的 $\tau-n$ 坐标。</li>
+</ul>
+<p><strong>坐标系没有优劣之分，只有“适不适合”之别。</strong> 选对了坐标系，物理规律就会褪去繁杂的数学外衣，向你展现它最简洁、最优美的本质。</p>
+<hr>
+
+  <footer class="footline">
+<script src="https://giscus.app/client.js"
+        data-repo="H-He-1-2/H-He-1-2-deploy"
+        data-repo-id="R_kgDOSlBNtQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOSlBNtc4C9rmI"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="/index.html">
+          <span class="logo-title default-animation">H-He-1-2</span>
+        </a>
+        <search><form action="/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="搜索 (CTRL+ALT+f)"><i class="fas fa-fw fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">搜索</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="搜索...">
+            <button class="search-clear" type="button" data-search-clear="" title="清除搜索"><i class="fas fa-fw fa-times" title="清除搜索"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation homelinks">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+            <li class="" data-nav-id="/index.html"><a class="padding" href="/index.html"><i class="fa-fw fas fa-home"></i> Home</a></li>
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="parent " data-nav-id="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/index.html"><a class="padding default-animation" href="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/index.html">高中物理</a><ul id="R-subsections-452cfb1e20b6a21e16f6feba5469b60e" class="collapsible-menu">
+            <li class="active " data-nav-id="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/3/index.html"><a class="padding" href="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/3/index.html">走出直线：平面运动与平面坐标系</a></li>
+            <li class="" data-nav-id="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/2/index.html"><a class="padding" href="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/2/index.html">从芝诺悖论到微积分：重新认识速度与加速度</a></li>
+            <li class="" data-nav-id="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/1/index.html"><a class="padding" href="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/1/index.html">参考系与坐标系</a></li></ul></li>
+            <li class="" data-nav-id="/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/index.html"><a class="padding default-animation" href="/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/index.html">抽象小故事</a><ul id="R-subsections-dbefe289971a4dcb01411c8956787967" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/%E4%B8%80%E4%BA%9Binteresting%E9%97%AE%E9%A2%98/index.html"><a class="padding" href="/%E4%B8%80%E4%BA%9Binteresting%E9%97%AE%E9%A2%98/index.html">一些interesting问题</a></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script>
+      window.MathJax = Object.assign( window.MathJax || {}, {
+        tex: {
+          inlineMath:  [['\\(', '\\)'], ['$',  '$']],  
+          displayMath: [['\\[', '\\]'], ['$$', '$$']], 
+        },
+        options: {
+          enableMenu: false 
+        }
+      }, JSON.parse("{}") );
+    </script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1779720170"></script>
+    <script>
+      window.relearn.themeUseMermaid = JSON.parse("{}");
+    </script>
+    <script src="/js/theme.min.js?1779720170" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>
