@@ -6,8 +6,15 @@
     <description></description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 24 May 2026 22:15:45 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 22:35:35 +0800</lastBuildDate>
     <atom:link href="https://H-He-1-2.github.io/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>合成虚构化合物 RuOK</title>
+      <link>https://H-He-1-2.github.io/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/ruok/index.html</link>
+      <pubDate>Wed, 27 May 2026 22:35:35 +0800</pubDate>
+      <guid>https://H-He-1-2.github.io/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/ruok/index.html</guid>
+      <description>摘要 RuOK 是一种具有“Are you OK?”文化内涵的虚构化合物。本文首次报道了两条合成单质 Ru 的全新路线：字母守恒反应 (Re + Cu → Ru + Ce) 以及大小写转换‑偶联串联反应 (Br → Rb; Rb + Au → Ru + Ab)。同时，我们利用真实反应 (2K + O₂ → K₂O₂) 经数学约分与符号重排获得 OK 分子。最终 Ru 与 OK 通过“合体”反应生成目标产物 RuOK。整个过程未遵循传统原子守恒，但严格遵守字母守恒定律与大小写转化原理，为梗化学 (Meme Chemistry) 提供了新的范本。&#xA;关键词：RuOK；字母守恒；大小写转化；约分反应；梗化学&#xA;1. 引言 “Are you OK?”这一灵魂发问，其拼音首字母恰好对应元素符号 Ru (钌) 与单词 OK 的组合。尽管钌在现实中是真实元素，但在本工作的符号学框架内，Ru 被视为一种可由字母重组获得的虚构单质。OK 则是一种由氧化钾衍生出的功能基团。本文旨在打通 Ru 与 OK 的合成路线，并最终组装出 RuOK，为今后“雷总关怀材料”的批量制备奠定基础。</description>
+    </item>
     <item>
       <title>猎犬与狐狸</title>
       <link>https://H-He-1-2.github.io/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/%E7%8C%8E%E7%8A%AC%E4%B8%8E%E7%8B%90%E7%8B%B8/index.html</link>

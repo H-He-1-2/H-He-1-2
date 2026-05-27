@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="generator" content="Hugo 0.161.1">
+    <meta name="generator" content="Hugo 0.162.0">
     <meta name="generator" content="Relearn 9.0.3">
     <meta name="description" content="(with ai agent)
 0. 走出直线：当世界变成二维 在前面的笔记中，我们把质点限制在了一条直线上。在那里，运动只有“向前”和“向后”，我们用正负号就能搞定方向。
@@ -53,20 +53,20 @@
     <meta itemprop="dateModified" content="2026-05-24T22:41:13+08:00">
     <meta itemprop="wordCount" content="348">
     <title>走出直线：平面运动与平面坐标系 :: H-He-1-2</title>
-    <link href="/css/auto-complete/auto-complete.min.css?1779722286" rel="stylesheet">
-    <script src="/js/auto-complete/auto-complete.min.js?1779722286" defer></script>
-    <script src="/js/search-lunr.min.js?1779722286" defer></script>
-    <script src="/js/search.min.js?1779722286" defer></script>
+    <link href="/css/auto-complete/auto-complete.min.css?1779893158" rel="stylesheet">
+    <script src="/js/auto-complete/auto-complete.min.js?1779893158" defer></script>
+    <script src="/js/search-lunr.min.js?1779893158" defer></script>
+    <script src="/js/search.min.js?1779893158" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/searchindex.en.js?1779722286";
+      window.relearn.index_js_url="/searchindex.en.js?1779893158";
     </script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=[];
     </script>
-    <link href="/css/theme.min.css?1779722286" rel="stylesheet">
-    <link href="/css/format-html.min.css?1779722286" rel="stylesheet" id="R-format-style">
+    <link href="/css/theme.min.css?1779893158" rel="stylesheet">
+    <link href="/css/format-html.min.css?1779893158" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -296,34 +296,34 @@ $$ \vec{a} = a</em>\tau \hat{e}_\tau + a_n \hat{e}_n $$</p>
 <h2 id="4-总结坐标系的选择哲学">4. 总结：坐标系的“选择哲学”<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
 <p>在考场上或实际工程中，面对一个平面运动问题，该如何选择坐标系？请记住以下“看菜下饭”原则：</p>
 <table>
-  <thead>
-      <tr>
-          <th style="text-align: left">运动特征 / 受力特征</th>
-          <th style="text-align: left">推荐坐标系</th>
-          <th style="text-align: left">典型物理模型</th>
-          <th style="text-align: left">核心优势</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left"><strong>受力恒定</strong>（如重力、匀强电场力），或初速度与力垂直。</td>
-          <td style="text-align: left"><strong>直角坐标系</strong> $(x, y)$</td>
-          <td style="text-align: left">平抛、斜抛、带电粒子在匀强电场中的偏转。</td>
-          <td style="text-align: left">运动方程解耦，$x$ 和 $y$ 独立计算，不用管基矢量变化。</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>力指向固定中心</strong>（有心力），或运动具有明显的旋转对称性。</td>
-          <td style="text-align: left"><strong>极坐标系</strong> $(r, \theta)$</td>
-          <td style="text-align: left">行星绕日、圆锥摆、带电粒子绕点电荷运动。</td>
-          <td style="text-align: left">径向和横向物理意义明确，角动量守恒表达极简。</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>轨迹已知</strong>，或物体被<strong>约束在轨道/绳子上</strong>，只关心沿轨道的运动和对轨道的压力。</td>
-          <td style="text-align: left"><strong>自然坐标系</strong> $(\tau, n)$</td>
-          <td style="text-align: left">圆周运动、过山车、单摆、汽车转弯。</td>
-          <td style="text-align: left">完美分离“改变速度大小”和“改变速度方向”的力，向心力方程一目了然。</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th style="text-align: left">运动特征 / 受力特征</th>
+					<th style="text-align: left">推荐坐标系</th>
+					<th style="text-align: left">典型物理模型</th>
+					<th style="text-align: left">核心优势</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left"><strong>受力恒定</strong>（如重力、匀强电场力），或初速度与力垂直。</td>
+					<td style="text-align: left"><strong>直角坐标系</strong> $(x, y)$</td>
+					<td style="text-align: left">平抛、斜抛、带电粒子在匀强电场中的偏转。</td>
+					<td style="text-align: left">运动方程解耦，$x$ 和 $y$ 独立计算，不用管基矢量变化。</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>力指向固定中心</strong>（有心力），或运动具有明显的旋转对称性。</td>
+					<td style="text-align: left"><strong>极坐标系</strong> $(r, \theta)$</td>
+					<td style="text-align: left">行星绕日、圆锥摆、带电粒子绕点电荷运动。</td>
+					<td style="text-align: left">径向和横向物理意义明确，角动量守恒表达极简。</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>轨迹已知</strong>，或物体被<strong>约束在轨道/绳子上</strong>，只关心沿轨道的运动和对轨道的压力。</td>
+					<td style="text-align: left"><strong>自然坐标系</strong> $(\tau, n)$</td>
+					<td style="text-align: left">圆周运动、过山车、单摆、汽车转弯。</td>
+					<td style="text-align: left">完美分离“改变速度大小”和“改变速度方向”的力，向心力方程一目了然。</td>
+			</tr>
+	</tbody>
 </table>
 <hr>
 <h2 id="5-结语数学是物理的脚手架">5. 结语：数学是物理的脚手架<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="复制链接到剪贴板"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
@@ -398,12 +398,12 @@ $$ \vec{a} = a</em>\tau \hat{e}_\tau + a_n \hat{e}_n $$</p>
       <div id="R-content-wrapper" class="highlightable">
         <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
           <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/index.html"><a class="padding default-animation" href="/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/index.html">抽象小故事</a><ul id="R-subsections-dbefe289971a4dcb01411c8956787967" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/%E4%B8%80%E4%BA%9Binteresting%E9%97%AE%E9%A2%98/index.html"><a class="padding default-animation" href="/%E4%B8%80%E4%BA%9Binteresting%E9%97%AE%E9%A2%98/index.html">一些interesting问题</a><ul id="R-subsections-a4a03c1fe7bfd560ebd2e6f5991e0f4a" class="collapsible-menu"></ul></li>
             <li class="parent " data-nav-id="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/index.html"><a class="padding default-animation" href="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/index.html">高中物理</a><ul id="R-subsections-452cfb1e20b6a21e16f6feba5469b60e" class="collapsible-menu">
             <li class="active " data-nav-id="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/3/index.html"><a class="padding" href="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/3/index.html">走出直线：平面运动与平面坐标系</a></li>
             <li class="" data-nav-id="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/2/index.html"><a class="padding" href="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/2/index.html">从芝诺悖论到微积分：重新认识速度与加速度</a></li>
             <li class="" data-nav-id="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/1/index.html"><a class="padding" href="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/1/index.html">参考系与坐标系</a></li></ul></li>
-            <li class="" data-nav-id="/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/index.html"><a class="padding default-animation" href="/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/index.html">抽象小故事</a><ul id="R-subsections-dbefe289971a4dcb01411c8956787967" class="collapsible-menu"></ul></li>
           </ul>
         </div>
         <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
@@ -432,11 +432,11 @@ $$ \vec{a} = a</em>\tau \hat{e}_\tau + a_n \hat{e}_n $$</p>
         }
       }, JSON.parse("{}") );
     </script>
-    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1779722286"></script>
+    <script id="MathJax-script" async src="/js/mathjax/tex-mml-chtml.js?1779893158"></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{}");
     </script>
-    <script src="/js/theme.min.js?1779722286" defer></script>
+    <script src="/js/theme.min.js?1779893158" defer></script>
     <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
   </body>
 </html>
