@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>抽象小故事 on H-He-1-2</title>
-		<link>https://H-He-1-2.github.io/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/</link>
-		<description>Recent content in 抽象小故事 on H-He-1-2</description>
+		<title>故事 on H-He-1-2</title>
+		<link>https://H-He-1-2.github.io/categories/%E6%95%85%E4%BA%8B/</link>
+		<description>Recent content in 故事 on H-He-1-2</description>
 		<generator>Hugo</generator>
 		<language>zh-cn</language>
 		
@@ -12,7 +12,7 @@
 		
 			<lastBuildDate>Wed, 27 May 2026 22:35:35 +0800</lastBuildDate>
 		
-			<atom:link href="https://H-He-1-2.github.io/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://H-He-1-2.github.io/categories/%E6%95%85%E4%BA%8B/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>合成虚构化合物 RuOK</title>
 				<link>https://H-He-1-2.github.io/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/ruok/</link>

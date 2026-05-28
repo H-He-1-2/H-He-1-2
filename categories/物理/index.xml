@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>高中物理 on H-He-1-2</title>
-		<link>https://H-He-1-2.github.io/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/</link>
-		<description>Recent content in 高中物理 on H-He-1-2</description>
+		<title>物理 on H-He-1-2</title>
+		<link>https://H-He-1-2.github.io/categories/%E7%89%A9%E7%90%86/</link>
+		<description>Recent content in 物理 on H-He-1-2</description>
 		<generator>Hugo</generator>
 		<language>zh-cn</language>
 		
@@ -12,7 +12,7 @@
 		
 			<lastBuildDate>Sun, 24 May 2026 22:41:13 +0800</lastBuildDate>
 		
-			<atom:link href="https://H-He-1-2.github.io/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://H-He-1-2.github.io/categories/%E7%89%A9%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>走出直线：平面运动与平面坐标系</title>
 				<link>https://H-He-1-2.github.io/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/3/</link>
