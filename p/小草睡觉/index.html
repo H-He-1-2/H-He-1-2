@@ -262,8 +262,8 @@
     <li><a href="#小草的三个疑问">小草的三个疑问</a>
       <ul>
         <li><a href="#1-峰值与谷值的比值">1️⃣ 峰值与谷值的比值</a></li>
-        <li><a href="#2-生成速率-r-的表达式">2️⃣ 生成速率 $R$ 的表达式</a></li>
-        <li><a href="#3-睡眠期浓度函数-nt-与物理意义">3️⃣ 睡眠期浓度函数 $N(t)$ 与物理意义</a></li>
+        <li><a href="#2-生成速率--的表达式">2️⃣ 生成速率 $R$ 的表达式</a></li>
+        <li><a href="#3-睡眠期浓度函数--与物理意义">3️⃣ 睡眠期浓度函数 $N(t)$ 与物理意义</a></li>
       </ul>
     </li>
   </ul>
@@ -299,16 +299,12 @@
 
     <div class="tagCloud-tags">
         
-            <a href="/categories/%E6%95%85%E4%BA%8B/">
-                故事
-            </a>
-        
             <a href="/categories/%E7%89%A9%E7%90%86/">
                 物理
             </a>
         
-            <a href="/categories/%E5%8C%96%E5%AD%A6/">
-                化学
+            <a href="/categories/%E6%95%85%E4%BA%8B/">
+                故事
             </a>
         
             <a href="/categories/%E6%95%B0%E5%AD%A6/">
@@ -317,6 +313,10 @@
         
             <a href="/categories/%E9%97%AE%E9%A2%98/">
                 问题
+            </a>
+        
+            <a href="/categories/%E5%8C%96%E5%AD%A6/">
+                化学
             </a>
         
     </div>
@@ -423,8 +423,8 @@
     <li><a href="#小草的三个疑问">小草的三个疑问</a>
       <ul>
         <li><a href="#1-峰值与谷值的比值">1️⃣ 峰值与谷值的比值</a></li>
-        <li><a href="#2-生成速率-r-的表达式">2️⃣ 生成速率 $R$ 的表达式</a></li>
-        <li><a href="#3-睡眠期浓度函数-nt-与物理意义">3️⃣ 睡眠期浓度函数 $N(t)$ 与物理意义</a></li>
+        <li><a href="#2-生成速率--的表达式">2️⃣ 生成速率 $R$ 的表达式</a></li>
+        <li><a href="#3-睡眠期浓度函数--与物理意义">3️⃣ 睡眠期浓度函数 $N(t)$ 与物理意义</a></li>
       </ul>
     </li>
   </ul>
@@ -504,7 +504,7 @@
 </li>
 <li>
 <p><strong>刚睡着时浓度怎么变？</strong><br>
-假设小草刚闭上眼睛，睡眠期已经过了时间 $t$（$0 &lt; t &lt; \tau_s$），此时物质M的浓度记为 $N(t)$。请写出 $N(t)$ 与 $N_v, R, T, t$ 的关系式，并说说式子里的指数项到底在“暗示”什么物理意义？</p>
+假设小草刚闭上眼睛，睡眠期已经过了时间 $t$（$0 < t < \tau_s$），此时物质M的浓度记为 $N(t)$。请写出 $N(t)$ 与 $N_v, R, T, t$ 的关系式，并说说式子里的指数项到底在“暗示”什么物理意义？</p>
 </li>
 </ol>
 <hr>
@@ -525,7 +525,7 @@ $$\frac{N_p}{N_v} = e^{\lambda \tau_a}$$<p>
 $$\boxed{\frac{N_p}{N_v} = 2^{\tau_a / T}}$$<p>
 <strong>通俗理解</strong>：比值只跟“清醒了多久”和“衰变多快”有关，跟睡觉时怎么回血完全无关。清醒越久或半衰期越短，落差就越大。</p>
 <hr>
-<h3 id="2-生成速率-r-的表达式">2️⃣ 生成速率 $R$ 的表达式
+<h3 id="2-生成速率--的表达式">2️⃣ 生成速率 $R$ 的表达式
 </h3><p>睡眠期是“一边回血一边漏血”的过程，动力学方程为：
 </p>
 $$\frac{dN}{dt} = R - \lambda N$$<p>
@@ -546,8 +546,8 @@ $$R = D_v \cdot \frac{e^{\lambda \tau_a} - e^{-\lambda \tau_s}}{1 - e^{-\lambda 
 $$\boxed{R = D_v \cdot \frac{2^{\tau_a/T} - 2^{-\tau_s/T}}{1 - 2^{-\tau_s/T}}}$$<p>
 <strong>通俗理解</strong>：回血速率 $R$ 不仅取决于最低点的漏血速度 $D_v$，还跟清醒/睡眠的时间比例、衰变快慢紧密挂钩。</p>
 <hr>
-<h3 id="3-睡眠期浓度函数-nt-与物理意义">3️⃣ 睡眠期浓度函数 $N(t)$ 与物理意义
-</h3><p>直接套用睡眠期通解，起点为 $N_v$，时间变量为 $t$（$0 &lt; t &lt; \tau_s$）：
+<h3 id="3-睡眠期浓度函数--与物理意义">3️⃣ 睡眠期浓度函数 $N(t)$ 与物理意义
+</h3><p>直接套用睡眠期通解，起点为 $N_v$，时间变量为 $t$（$0 < t < \tau_s$）：
 </p>
 $$\boxed{N(t) = \frac{R}{\lambda} + \left( N_v - \frac{R}{\lambda} \right) e^{-\lambda t} \quad \left(\lambda = \frac{\ln 2}{T}\right)}$$<p><strong>指数项的物理意义</strong>：<br>
 式中的 $e^{-\lambda t}$ 描述的是**“偏离平衡态的部分”随时间逐渐被抹平的过程**。</p>
@@ -569,22 +569,10 @@ $$\boxed{N(t) = \frac{R}{\lambda} + \left( N_v - \frac{R}{\lambda} \right) e^{-\
 
 
     
-        <link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
-            ><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
-                defer
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcaxI56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
-                defer
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/mhchem.min.js"integrity="sha384-Vu5CUg3i7MAx3GAcG4TjgE2Gqsl3O0Np&#43;0L0LgB2rESlx3gpPH5rs1uADKdzOzM"crossorigin="anonymous"
-                defer
-                >
-            </script><script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/mhchem.min.js" crossorigin="anonymous" defer></script><script>
     window.addEventListener("DOMContentLoaded", () => {
         const elementsToRender = [".main-article", ".widget--toc"];
 

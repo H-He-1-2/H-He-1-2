@@ -316,16 +316,12 @@
 
     <div class="tagCloud-tags">
         
-            <a href="/categories/%E6%95%85%E4%BA%8B/">
-                故事
-            </a>
-        
             <a href="/categories/%E7%89%A9%E7%90%86/">
                 物理
             </a>
         
-            <a href="/categories/%E5%8C%96%E5%AD%A6/">
-                化学
+            <a href="/categories/%E6%95%85%E4%BA%8B/">
+                故事
             </a>
         
             <a href="/categories/%E6%95%B0%E5%AD%A6/">
@@ -334,6 +330,10 @@
         
             <a href="/categories/%E9%97%AE%E9%A2%98/">
                 问题
+            </a>
+        
+            <a href="/categories/%E5%8C%96%E5%AD%A6/">
+                化学
             </a>
         
     </div>
@@ -515,7 +515,7 @@ $$ \vec{r}(t) = r(t)\hat{e}_r $$<p>
 <li><strong>横向基矢量 $\hat{e}_\theta$</strong>：垂直于 $\hat{e}_r$，指向 $\theta$ 增加的方向（逆时针）。</li>
 </ul>
 <h3 id="核心难点基矢量随风飘摇">核心难点：基矢量“随风飘摇”
-</h3><p>这是高中生最容易栽跟头的地方！<strong>$\hat{e}<em>r$ 和 $\hat{e}</em>\theta$ 的方向不是固定的，它们会随着质点的位置变化而转动！</strong></p>
+</h3><p>这是高中生最容易栽跟头的地方！<strong>$\hat{e}_r$ 和 $\hat{e}_\theta$ 的方向不是固定的，它们会随着质点的位置变化而转动！</strong></p>
 <p>当质点移动时，不仅距离 $r$ 在变，基矢量的方向也在变。因此，对位置求导得到速度时，必须使用乘积求导法则：
 </p>
 $$ \vec{v} = \frac{d}{dt}(r\hat{e}_r) = \dot{r}\hat{e}_r + r\dot{\hat{e}}_r $$<p>
@@ -529,10 +529,10 @@ $$ \vec{v} = \underbrace{\dot{r}}_{\text{径向速度}}\hat{e}_r + \underbrace{r
 </h3><p>当物体受到的力<strong>始终指向（或背向）一个固定中心</strong>时（如万有引力、库仑力、绳子拉力），极坐标系是首选。开普勒行星运动定律的严格证明，就是在极坐标系下完成的。</p>
 <details>
 <summary>🚀 理论力学预警：对基矢量求导的“魔鬼细节”（点击展开）</summary>
-<p>为什么 $\dot{\hat{e}}<em>r = \dot{\theta}\hat{e}</em>\theta$？
-想象质点转过一个极小的角度 $\Delta \theta$。径向基矢量 $\hat{e}<em>r$ 也跟着转了 $\Delta \theta$。
-因为 $\hat{e}<em>r$ 是单位向量（长度为1），它尖端的位移弧长就是 $1 \cdot \Delta \theta$。当 $\Delta t \to 0$ 时，这个微小位移的方向恰好就是横向 $\hat{e}</em>\theta$ 的方向。
-所以 $\frac{d\hat{e}<em>r}{dt} = \lim \frac{\Delta \theta \hat{e}</em>\theta}{\Delta t} = \dot{\theta}\hat{e}</em>\theta$。
+<p>为什么 $\dot{\hat{e}}_r = \dot{\theta}\hat{e}_\theta$？
+想象质点转过一个极小的角度 $\Delta \theta$。径向基矢量 $\hat{e}_r$ 也跟着转了 $\Delta \theta$。
+因为 $\hat{e}_r$ 是单位向量（长度为1），它尖端的位移弧长就是 $1 \cdot \Delta \theta$。当 $\Delta t \to 0$ 时，这个微小位移的方向恰好就是横向 $\hat{e}_\theta$ 的方向。
+所以 $\frac{d\hat{e}_r}{dt} = \lim \frac{\Delta \theta \hat{e}_\theta}{\Delta t} = \dot{\theta}\hat{e}_\theta$。
 同理可证 $\frac{d\hat{e}_\theta}{dt} = -\dot{\theta}\hat{e}_r$。
 把这个代入加速度求导，就会出现著名的<strong>科里奥利加速度项</strong> $2\dot{r}\dot{\theta}$。这是大学理论力学第一学期的“挂科重灾区”，现在理解了这个几何直观，大学就不怕了！</p>
 </details>
@@ -553,7 +553,7 @@ $$ \vec{v} = v \hat{e}_\tau $$<p>
 </p>
 $$ \vec{a} = a_\tau \hat{e}_\tau + a_n \hat{e}_n $$<h3 id="核心物理直觉大小与方向的解耦">核心物理直觉：大小与方向的解耦
 </h3><ul>
-<li><strong>切向加速度 $a_\tau = \frac{dv}{dt}$</strong>：只负责改变速度的<strong>大小</strong>。$a_\tau &gt; 0$ 加速，$a_\tau &lt; 0$ 减速。</li>
+<li><strong>切向加速度 $a_\tau = \frac{dv}{dt}$</strong>：只负责改变速度的<strong>大小</strong>。$a_\tau > 0$ 加速，$a_\tau < 0$ 减速。</li>
 <li><strong>法向加速度 $a_n = \frac{v^2}{\rho}$</strong>：只负责改变速度的<strong>方向</strong>。这里的 $\rho$ 是轨迹在该点的<strong>曲率半径</strong>。只要轨迹弯曲（$\rho \neq \infty$），就一定有法向加速度（向心加速度）。</li>
 </ul>
 <h3 id="最佳适用场景已知轨迹的约束运动">最佳适用场景：已知轨迹的约束运动
@@ -627,22 +627,10 @@ $$ \vec{a} = a_\tau \hat{e}_\tau + a_n \hat{e}_n $$<h3 id="核心物理直觉大
 
 
     
-        <link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
-            ><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
-                defer
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcaxI56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
-                defer
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/mhchem.min.js"integrity="sha384-Vu5CUg3i7MAx3GAcG4TjgE2Gqsl3O0Np&#43;0L0LgB2rESlx3gpPH5rs1uADKdzOzM"crossorigin="anonymous"
-                defer
-                >
-            </script><script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/mhchem.min.js" crossorigin="anonymous" defer></script><script>
     window.addEventListener("DOMContentLoaded", () => {
         const elementsToRender = [".main-article", ".widget--toc"];
 
