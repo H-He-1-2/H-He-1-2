@@ -417,6 +417,18 @@
         
 
         
+
+        <div class="inline-meta" id="viewCount">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="2" />
+  <path d="M22 12c-2.667 4.667-6 7-10 7s-7.333-2.333-10-7c2.667-4.667 6-7 10-7s7.333 2.333 10 7z" />
+</svg>
+
+            <time class="article-time--reading">
+                <span id="vercount_value_page_pv">loading... </span>次
+            </time>
+        </div>
     </footer>
     
 </div>
@@ -662,6 +674,22 @@ $$\ce{Ru + OK ->[超声] RuOK} \tag{7}$$<p>产物 RuOK 为银白色晶状粉末�
         </div>
         
 <script type="text/javascript" src="/ts/main.d00997a2f4a6ce525f496da0c3ae6ad392b0468b8a9024f23309fdfc75c67a35.js" defer></script>
+<script defer src="https://cn.vercount.one/js"></script>
+<script>
+    function showHideView() {
+        let viewCounts = document.querySelectorAll("#viewCount");
+        if (viewCounts) {
+            let article =  document.querySelector(".article-page");
+            if (!article) {
+                viewCounts.forEach(ele => {
+                    ele.style.display = 'none';
+                });
+            }
+        }
+    }
+    
+    showHideView();
+</script>
 
 
     </body>
