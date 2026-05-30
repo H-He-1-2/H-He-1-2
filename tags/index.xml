@@ -1,15 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Tags on H-He-1-2</title>
-		<link>https://H-He-1-2.github.io/tags/</link>
-		<description>Recent content in Tags on H-He-1-2</description>
-		<generator>Hugo</generator>
-		<language>zh-cn</language>
-		
-		
-		
-		
-			<atom:link href="https://H-He-1-2.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-	</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tags on H-He-1-2</title>
+        <link>https://h-he-1-2.cyou/tags/</link>
+        <description>Recent content in Tags on H-He-1-2</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language><atom:link href="https://h-he-1-2.cyou/tags/index.xml" rel="self" type="application/rss+xml" /></channel>
 </rss>

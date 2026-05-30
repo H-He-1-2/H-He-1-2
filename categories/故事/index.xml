@@ -1,38 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>故事 on H-He-1-2</title>
-		<link>https://H-He-1-2.github.io/categories/%E6%95%85%E4%BA%8B/</link>
-		<description>Recent content in 故事 on H-He-1-2</description>
-		<generator>Hugo</generator>
-		<language>zh-cn</language>
-		
-		
-		
-		
-			<lastBuildDate>Wed, 27 May 2026 22:35:35 +0800</lastBuildDate>
-		
-			<atom:link href="https://H-He-1-2.github.io/categories/%E6%95%85%E4%BA%8B/index.xml" rel="self" type="application/rss+xml" />
-			<item>
-				<title>合成虚构化合物 RuOK</title>
-				<link>https://H-He-1-2.github.io/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/ruok/</link>
-				<pubDate>Wed, 27 May 2026 22:35:35 +0800</pubDate>
-				<guid>https://H-He-1-2.github.io/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/ruok/</guid>
-				<description>&lt;h2 id=&#34;摘要&#34;&gt;摘要&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;RuOK&lt;/strong&gt; 是一种具有“Are you OK?”文化内涵的虚构化合物。本文首次报道了两条合成单质 &lt;strong&gt;Ru&lt;/strong&gt; 的全新路线：字母守恒反应 (Re + Cu → Ru + Ce) 以及大小写转换‑偶联串联反应 (Br → Rb; Rb + Au → Ru + Ab)。同时，我们利用真实反应 (2K + O₂ → K₂O₂) 经数学约分与符号重排获得 &lt;strong&gt;OK&lt;/strong&gt; 分子。最终 Ru 与 OK 通过“合体”反应生成目标产物 RuOK。整个过程未遵循传统原子守恒，但严格遵守&lt;strong&gt;字母守恒定律&lt;/strong&gt;与&lt;strong&gt;大小写转化原理&lt;/strong&gt;，为梗化学 (Meme Chemistry) 提供了新的范本。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>猎犬与狐狸</title>
-				<link>https://H-He-1-2.github.io/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/%E7%8C%8E%E7%8A%AC%E4%B8%8E%E7%8B%90%E7%8B%B8/</link>
-				<pubDate>Sun, 24 May 2026 22:15:45 +0800</pubDate>
-				<guid>https://H-He-1-2.github.io/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/%E7%8C%8E%E7%8A%AC%E4%B8%8E%E7%8B%90%E7%8B%B8/</guid>
-				<description>&lt;hr&gt;&#xA;&lt;p&gt;Very Long Ago,有一只猎犬和一只狐狸，狗十分喜欢狐狸，就去追狐狸，但是它的脑子不太好，只会把自己的速度方向对准狐狸，而狐狸的脑子也不太行，只会沿着直线前进。&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>止战之殇</title>
-				<link>https://H-He-1-2.github.io/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/%E6%AD%A2%E6%88%98%E4%B9%8B%E6%AE%87%E5%8E%9F%E7%89%88/</link>
-				<pubDate>Sun, 24 May 2026 11:35:41 +0800</pubDate>
-				<guid>https://H-He-1-2.github.io/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/%E6%AD%A2%E6%88%98%E4%B9%8B%E6%AE%87%E5%8E%9F%E7%89%88/</guid>
-				<description>&lt;p&gt;雷德王还有三个小时降临地球，世界各大媒体将这条消息传得沸沸扬扬。他的到来，是救赎还是毁灭，我无从得知。众说纷纭，我只是想先吃个汉堡。&lt;/p&gt;&#xA;&lt;p&gt;宇宙无穷，人生微渺，我从一无所有中来，自当归于虚无。唯独让我牵挂、难以放下执念的便是学校的汉堡了。汉堡不大，面包很干。初相识于三年前，我年少，它缥缈，我尝一口，很好吃。不知什么时候起，汉堡的肉饼变成了自制小牛肉，虽然多了一份人情味，少了一份预制感，但干燥的触感与同样干的面饼相结合，让我失去了对它往日的热爱。&lt;/p&gt;</description>
-			</item>
-	</channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>故事 on H-He-1-2</title>
+        <link>https://h-he-1-2.cyou/categories/%E6%95%85%E4%BA%8B/</link>
+        <description>Recent content in 故事 on H-He-1-2</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Wed, 27 May 2026 22:35:35 +0800</lastBuildDate><atom:link href="https://h-he-1-2.cyou/categories/%E6%95%85%E4%BA%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>合成虚构化合物 RuOK</title>
+            <link>https://h-he-1-2.cyou/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/ruok/</link>
+            <pubDate>Wed, 27 May 2026 22:35:35 +0800</pubDate>
+            <guid>https://h-he-1-2.cyou/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/ruok/</guid>
+            <description>&lt;h2 id=&#34;摘要&#34;&gt;摘要&#xA;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;RuOK&lt;/strong&gt; 是一种具有“Are you OK?”文化内涵的虚构化合物。本文首次报道了两条合成单质 &lt;strong&gt;Ru&lt;/strong&gt; 的全新路线：字母守恒反应 (Re + Cu → Ru + Ce) 以及大小写转换‑偶联串联反应 (Br → Rb; Rb + Au → Ru + Ab)。同时，我们利用真实反应 (2K + O₂ → K₂O₂) 经数学约分与符号重排获得 &lt;strong&gt;OK&lt;/strong&gt; 分子。最终 Ru 与 OK 通过“合体”反应生成目标产物 RuOK。整个过程未遵循传统原子守恒，但严格遵守&lt;strong&gt;字母守恒定律&lt;/strong&gt;与&lt;strong&gt;大小写转化原理&lt;/strong&gt;，为梗化学 (Meme Chemistry) 提供了新的范本。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;关键词&lt;/strong&gt;：RuOK；字母守恒；大小写转化；约分反应；梗化学&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;1-引言&#34;&gt;1. 引言&#xA;&lt;/h2&gt;&lt;p&gt;“Are you OK?”这一灵魂发问，其拼音首字母恰好对应元素符号 Ru (钌) 与单词 OK 的组合。尽管钌在现实中是真实元素，但在本工作的符号学框架内，Ru 被视为一种&lt;strong&gt;可由字母重组获得的虚构单质&lt;/strong&gt;。OK 则是一种由氧化钾衍生出的功能基团。本文旨在打通 Ru 与 OK 的合成路线，并最终组装出 &lt;strong&gt;RuOK&lt;/strong&gt;，为今后“雷总关怀材料”的批量制备奠定基础。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;2-实验部分&#34;&gt;2. 实验部分&#xA;&lt;/h2&gt;&lt;h3 id=&#34;21-单质-ru-的合成&#34;&gt;2.1 单质 Ru 的合成&#xA;&lt;/h3&gt;&lt;h4 id=&#34;211-方法一字母守恒法&#34;&gt;2.1.1 方法一：字母守恒法&#xA;&lt;/h4&gt;&lt;p&gt;将等字母量的 Re (铼) 与 Cu (铜) 在 300 °C 下于回响炉中共热，发生字母重排：&lt;/p&gt;&#xA;$$\ce{Re + Cu -&gt;[\Delta] Ru + Ce} \tag{1}$$&lt;p&gt;反应 (1) 前后，字母集合与数量严格守恒：&lt;br&gt;&#xA;反应物字母：{R, e, C, u}&lt;br&gt;&#xA;产物字母：{R, u, C, e}&lt;br&gt;&#xA;仅改变字母组合方式即可获得单质 &lt;strong&gt;Ru&lt;/strong&gt;。副产物 Ce (铈) 可作为下一步反应的催化剂。&lt;/p&gt;&#xA;&lt;h4 id=&#34;212-方法二大小写转化与偶联法&#34;&gt;2.1.2 方法二：大小写转化与偶联法&#xA;&lt;/h4&gt;&lt;p&gt;首先，将单质 Br (溴) 通过 &lt;strong&gt;大小写转化酶 (CaseShiftase)&lt;/strong&gt; 处理，使其分子符号中的大小写互换并重排：&lt;/p&gt;&#xA;$$\ce{Br &lt;=&gt;[CaseShiftase] Rb} \tag{2}$$&lt;p&gt;反应 (2) 中，&lt;code&gt;B&lt;/code&gt; 与 &lt;code&gt;r&lt;/code&gt; 分别转化为 &lt;code&gt;R&lt;/code&gt; 与 &lt;code&gt;b&lt;/code&gt;，得到金属 &lt;strong&gt;Rb&lt;/strong&gt; (铷)。随后，Rb 与 Au (金) 发生字母偶联：&lt;/p&gt;&#xA;$$\ce{Rb + Au -&gt; Ru + Ab} \tag{3}$$&lt;p&gt;反应 (3) 的字母集合为：{R, b, A, u}，产物为 {R, u} 与 {A, b}，符合字母守恒。副产物 &lt;strong&gt;Ab&lt;/strong&gt; (抗体，Antibody) 因具有生物活性被立即除去，留下的 &lt;strong&gt;Ru&lt;/strong&gt; 纯度 &amp;gt;99.9 %。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;22-功能基团-ok-的合成&#34;&gt;2.2 功能基团 OK 的合成&#xA;&lt;/h3&gt;&lt;h4 id=&#34;221-真实燃烧反应&#34;&gt;2.2.1 真实燃烧反应&#xA;&lt;/h4&gt;&lt;p&gt;首先，利用真实的碱金属燃烧反应制备过氧化钾：&lt;/p&gt;&#xA;$$\ce{2K + O2 -&gt;[\Delta] K2O2} \tag{4}$$&lt;p&gt;该反应已在标准无机化学教材中记载，此处不作赘述。&lt;/p&gt;&#xA;&lt;h4 id=&#34;222-数学约分与符号重排&#34;&gt;2.2.2 数学约分与符号重排&#xA;&lt;/h4&gt;&lt;p&gt;将制得的 K₂O₂ 进行&lt;strong&gt;数学约分&lt;/strong&gt;（分母和分子的下标 2 同时约去）：&lt;/p&gt;&#xA;$$\ce{K2O2 -&gt;[约分] 2KO} \tag{5}$$&lt;p&gt;得到两当量的 &lt;strong&gt;KO&lt;/strong&gt;。随后 KO 在常温下自发发生&lt;strong&gt;对称变换&lt;/strong&gt;，实现符号反转：&lt;/p&gt;&#xA;$$\ce{KO &lt;=&gt; OK} \tag{6}$$&lt;p&gt;由此获得稳定的功能基团 &lt;strong&gt;OK&lt;/strong&gt;。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;23-目标产物-ruok-的合体&#34;&gt;2.3 目标产物 RuOK 的合体&#xA;&lt;/h3&gt;&lt;p&gt;将前述合成的 Ru 与 OK 等物质的量混合，在乙醇溶液中超声处理 30 min，即发生&lt;strong&gt;合体反应&lt;/strong&gt;：&lt;/p&gt;&#xA;$$\ce{Ru + OK -&gt;[超声] RuOK} \tag{7}$$&lt;p&gt;产物 RuOK 为银白色晶状粉末，极易溶于梗性溶剂（如 DMSO）。其分子式发音即为 &lt;strong&gt;“Are you OK?”&lt;/strong&gt;，成功实现了文化内涵的化学实体化。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;3-结果与讨论&#34;&gt;3. 结果与讨论&#xA;&lt;/h2&gt;&lt;p&gt;图 1 展示了 RuOK 的合成全流程。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Re + Cu ──Δ──▶ Ru + Ce&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Br ──CaseShiftase──▶ Rb ──+Au──▶ Ru + Ab&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;2K + O₂ ──Δ──▶ K₂O₂ ──约分──▶ 2KO ──⇌──▶ 2OK&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Ru + OK ──超声──▶ RuOK&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;通过红外光谱（IR）可观测到 Ru‒O 键的特征伸缩振动峰（520 cm⁻¹）以及 O‒K 的变形振动峰（888 cm⁻¹，谐音“拜拜”）。¹H‑NMR 中未出现质子信号，与其零氢键结构吻合。值得注意的是，RuOK 在磁场中会自发排列成 “Are you OK?” 的字样，呈现出独特的&lt;strong&gt;梗‑磁各向异性&lt;/strong&gt;。&lt;/p&gt;&#xA;&lt;p&gt;两条 Ru 合成路线互为补充：字母守恒法条件温和、副产 Ce；大小写转化法需要特定的酶催化剂，但原子经济性更高。OK 的合成路线则巧妙融合了真实化学与数学操作，具有极简的步骤和极高的梗产率。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;4-结论&#34;&gt;4. 结论&#xA;&lt;/h2&gt;&lt;p&gt;本文通过“字母守恒”、“大小写转化”、“数学约分”和“合体”等一系列非传统化学操作，成功合成了虚构化合物 &lt;strong&gt;RuOK&lt;/strong&gt;，全程无需关心真实的原子守恒。该工作不仅为“Are you OK?”提供了物质载体，也为梗化学开辟了符号级别元素合成的全新范式。未来，我们将进一步探索 RuOK 在小米有机框架 (Xiaomi Organic Frameworks, XOFs) 中的配位行为。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;参考文献&#34;&gt;参考文献&#xA;&lt;/h2&gt;&lt;iframe src=&#34;//player.bilibili.com/player.html?isOutside=true&amp;aid=2271112&amp;bvid=BV1es411D7sW&amp;cid=3540266&amp;p=1&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34;&gt;&lt;/iframe&gt;&#xA;</description>
+        </item><item>
+            <title>猎犬与狐狸</title>
+            <link>https://h-he-1-2.cyou/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/%E7%8C%8E%E7%8A%AC%E4%B8%8E%E7%8B%90%E7%8B%B8/</link>
+            <pubDate>Sun, 24 May 2026 22:15:45 +0800</pubDate>
+            <guid>https://h-he-1-2.cyou/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/%E7%8C%8E%E7%8A%AC%E4%B8%8E%E7%8B%90%E7%8B%B8/</guid>
+            <description>&lt;hr&gt;&#xA;&lt;p&gt;Very Long Ago,有一只猎犬和一只狐狸，狗十分喜欢狐狸，就去追狐狸，但是它的脑子不太好，只会把自己的速度方向对准狐狸，而狐狸的脑子也不太行，只会沿着直线前进。&lt;/p&gt;&#xA;&lt;p&gt;为了让猎犬追上狐狸，猎人朝着狐狸开了一枪，然鹅，狐狸立刻跑进了security zone,同时因为time zone不同，猎人失去了再次开枪的能力，狐狸在security zone内继续前进，找到了它的两个兄弟,firefox和waterfox，正当它们准备一起去找猎犬反击时，一束宇宙射线击中的它们的电脑内存，使firefox和waterfox崩溃，同时也让fox的kernel十分panic。为了修复它的电脑，fox接入了ai，however,ai发现的fox电脑的提权漏洞，成功执行了rm -rf /*&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;</description>
+        </item><item>
+            <title>止战之殇</title>
+            <link>https://h-he-1-2.cyou/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/%E6%AD%A2%E6%88%98%E4%B9%8B%E6%AE%87%E5%8E%9F%E7%89%88/</link>
+            <pubDate>Sun, 24 May 2026 11:35:41 +0800</pubDate>
+            <guid>https://h-he-1-2.cyou/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/%E6%AD%A2%E6%88%98%E4%B9%8B%E6%AE%87%E5%8E%9F%E7%89%88/</guid>
+            <description>&lt;p&gt;雷德王还有三个小时降临地球，世界各大媒体将这条消息传得沸沸扬扬。他的到来，是救赎还是毁灭，我无从得知。众说纷纭，我只是想先吃个汉堡。&lt;/p&gt;&#xA;&lt;p&gt;宇宙无穷，人生微渺，我从一无所有中来，自当归于虚无。唯独让我牵挂、难以放下执念的便是学校的汉堡了。汉堡不大，面包很干。初相识于三年前，我年少，它缥缈，我尝一口，很好吃。不知什么时候起，汉堡的肉饼变成了自制小牛肉，虽然多了一份人情味，少了一份预制感，但干燥的触感与同样干的面饼相结合，让我失去了对它往日的热爱。&lt;/p&gt;&#xA;&lt;p&gt;雷德王降临了，在维多利亚港之上。没有谈判，硝烟四起，炮火轰鸣，世界褪去了色彩。身为新时代的青年，肩负家国复兴的重担，拯救世界，舍我其谁。可站在雷德王脚下那一刻，我才看清自己的渺小，它比自由女神像还要庞大无数倍。尽管我从未踏足远方，只在视频里见过分毫。&lt;/p&gt;&#xA;&lt;p&gt;就在我直面死亡将至的时候，雷德王停下了所有进攻，它缓缓低头，朝我伸出了能摧毁整座城市的巨爪。我浑身颤抖，满心惶恐，不敢拒绝。可威震全世界的怪兽雷德王想要的，只是我手中平平无奇的汉堡。原来再强大的生命，也敌不过平凡的温柔。&lt;/p&gt;&#xA;&lt;p&gt;我将汉堡递给了它，下一秒，一颗子弹贯穿了我的胸膛。临死前，耳畔传来冰冷的两个字：通敌。&lt;/p&gt;&#xA;&lt;p&gt;这就是人性吗？所有人高喊正义和平，却容不下一场温柔的和解。雷德王，这一刻我终于懂你了。&lt;/p&gt;&#xA;&lt;p&gt;世间很大，汉堡很小，它是乱世里我最后的赤诚和热爱。&lt;/p&gt;&#xA;&lt;p&gt;突然……想吃一个……汉堡……啊……&lt;/p&gt;&#xA;</description>
+        </item></channel>
 </rss>

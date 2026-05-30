@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="(with ai agent) 0. 从想象一片空间开始 闭上眼睛，想象一片无边无际、空无一物的绝对虚空。没有上下左右，没有起点终点，也没有“静止”与“运动”的默认标准。此时，一个质点悄然掠过。\n">
+<title>参考系与坐标系</title>
+
+
+<link rel="canonical" href="https://h-he-1-2.cyou/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/1/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+
+
+<link rel="stylesheet" href="/scss/style.min.e62e09c60ba428a627e03568fa3df938f6a8224f815b5846f00816c17d4a0be4.css"><meta property='og:title' content="参考系与坐标系">
+<meta property='og:description' content="(with ai agent) 0. 从想象一片空间开始 闭上眼睛，想象一片无边无际、空无一物的绝对虚空。没有上下左右，没有起点终点，也没有“静止”与“运动”的默认标准。此时，一个质点悄然掠过。\n">
+<meta property='og:url' content='https://h-he-1-2.cyou/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/1/'>
+<meta property='og:site_name' content='H-He-1-2'>
+<meta property='og:type' content='article'><meta property='article:section' content='高中物理' /><meta property='article:published_time' content='2026-05-24T07:34:26&#43;08:00'/><meta property='article:modified_time' content='2026-05-24T07:34:26&#43;08:00'/>
+<meta name="twitter:title" content="参考系与坐标系">
+<meta name="twitter:description" content="(with ai agent) 0. 从想象一片空间开始 闭上眼睛，想象一片无边无际、空无一物的绝对虚空。没有上下左右，没有起点终点，也没有“静止”与“运动”的默认标准。此时，一个质点悄然掠过。\n">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">H-He-1-2</a></h1>
+            <h2 class="site-description">个人学习笔记·物理·故事·脑洞</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/H-He-1-2'
+                        
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
+</svg>
+
+
+
+                
+                <span>高中物理</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E6%8A%BD%E8%B1%A1%E5%B0%8F%E6%95%85%E4%BA%8B/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
+  <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
+</svg>
+
+
+
+                
+                <span>抽象小故事</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E4%B8%80%E4%BA%9Binteresting%E9%97%AE%E9%A2%98/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                
+                <span>一些interesting问题</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span></span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title"></h2>
+        
+        <div class="widget--toc">
+            <nav class="toc-nav" id="TableOfContents">
+                
+  <ul>
+    <li><a href="#with-ai-agent">(with ai agent)</a></li>
+    <li><a href="#0-从想象一片空间开始">0. 从想象一片空间开始</a></li>
+    <li><a href="#1-参考系reference-frame物理观测的舞台">1. 参考系（Reference Frame）：物理观测的“舞台”</a>
+      <ul>
+        <li><a href="#什么是参考系">什么是参考系？</a></li>
+        <li><a href="#它的物理意义是什么">它的物理意义是什么？</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-坐标系coordinate-system数学描述的网格">2. 坐标系（Coordinate System）：数学描述的“网格”</a>
+      <ul>
+        <li><a href="#什么是坐标系">什么是坐标系？</a></li>
+        <li><a href="#它的数学意义是什么">它的数学意义是什么？</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-核心区分物理-vs-数学">3. 核心区分：物理 vs 数学</a></li>
+    <li><a href="#4-实战解题策略先定舞台再铺网格">4. 实战解题策略：先定舞台，再铺网格</a></li>
+    <li><a href="#5-结语锚与尺">5. 结语：锚与尺</a></li>
+  </ul>
+
+            </nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            
+            
+            
+            <a href="/categories/%E7%89%A9%E7%90%86/" style="background-color: hsl(311, 60%, 84%); color: hsl(311, 60%, 15%);">
+                物理
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/%E9%AB%98%E4%B8%AD%E7%89%A9%E7%90%86/1/">参考系与坐标系</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    <footer class="article-meta">
+        
+            <div class="inline-meta">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                    <time class="article-time--published" datetime='2026-05-24T07:34:26&#43;08:00'>Sunday, May 24, 2026</time>
+                
+
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                    <time class="article-time--reading">
+                        
+                    </time>
+                
+            </div>
+        
+
+        
+
+        
+    </footer>
+    
+</div>
+
+</header>
+
+    
+    <aside class="article-toc">
+        <details>
+            <summary>
+                <div class="article-toc-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+                    <span></span>
+                </div>
+            </summary>
+            <nav class="toc-nav">
+                
+  <ul>
+    <li><a href="#with-ai-agent">(with ai agent)</a></li>
+    <li><a href="#0-从想象一片空间开始">0. 从想象一片空间开始</a></li>
+    <li><a href="#1-参考系reference-frame物理观测的舞台">1. 参考系（Reference Frame）：物理观测的“舞台”</a>
+      <ul>
+        <li><a href="#什么是参考系">什么是参考系？</a></li>
+        <li><a href="#它的物理意义是什么">它的物理意义是什么？</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-坐标系coordinate-system数学描述的网格">2. 坐标系（Coordinate System）：数学描述的“网格”</a>
+      <ul>
+        <li><a href="#什么是坐标系">什么是坐标系？</a></li>
+        <li><a href="#它的数学意义是什么">它的数学意义是什么？</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-核心区分物理-vs-数学">3. 核心区分：物理 vs 数学</a></li>
+    <li><a href="#4-实战解题策略先定舞台再铺网格">4. 实战解题策略：先定舞台，再铺网格</a></li>
+    <li><a href="#5-结语锚与尺">5. 结语：锚与尺</a></li>
+  </ul>
+
+            </nav>
+        </details>
+    </aside>
+    
+
+    <section class="article-content">
+    
+    
+    <h2 id="with-ai-agent">(with ai agent)
+</h2><h2 id="0-从想象一片空间开始">0. 从想象一片空间开始
+</h2><p>闭上眼睛，想象一片无边无际、空无一物的绝对虚空。没有上下左右，没有起点终点，也没有“静止”与“运动”的默认标准。此时，一个质点悄然掠过。</p>
+<p>你该如何描述它？说它“很快”？“向左”？“离我三米远”？这些词在没有基准时毫无意义。</p>
+<p>物理学的起点，正是为了解决这个最朴素的问题：<strong>如何为运动建立可测量、可计算的描述体系？</strong></p>
+<p>答案分为两步：</p>
+<ol>
+<li>先搭一个<strong>物理舞台</strong> → <strong>参考系</strong>（Reference Frame）</li>
+<li>再铺一张<strong>数学网格</strong> → <strong>坐标系</strong>（Coordinate System）</li>
+</ol>
+<p>很多同学在解题时把二者混为一谈，但在严谨的力学中，它们的区分直接决定了你的受力分析对不对、方程列得简不简单。</p>
+<hr>
+<h2 id="1-参考系reference-frame物理观测的舞台">1. 参考系（Reference Frame）：物理观测的“舞台”
+</h2><h3 id="什么是参考系">什么是参考系？
+</h3><p>参考系是用于观察和描述物体运动的<strong>物理实体</strong>或<strong>假想刚体</strong>。它不是空间里的一个点，而是由一组相对静止的物体（或抽象的“观测者平台”）构成的整体。</p>
+<h3 id="它的物理意义是什么">它的物理意义是什么？
+</h3><ul>
+<li><strong>运动是相对的</strong>：没有参考系，“速度”“加速度”“静止”等概念就失去了定义。你坐在高铁上，相对于车厢是静止的，相对于地面是运动的。</li>
+<li><strong>决定物理规律的形式</strong>：在<strong>惯性参考系</strong>中，牛顿运动定律直接成立；在<strong>非惯性参考系</strong>（如加速的电梯、转弯的汽车）中，牛顿定律不能直接用，必须引入“惯性力”（如离心力）。</li>
+</ul>
+<details>
+<summary>🤔 深入理解：为什么参考系必须“携带时间”？（点击展开）</summary>
+<p>在高中我们很少强调这一点，但在严谨的力学中，<strong>参考系不仅包含空间基准，还必须包含时间基准（时钟）</strong>。
+要描述“速度 $v = \frac{\Delta x}{\Delta t}$”，你不仅需要知道质点在哪（空间），还需要知道它是“什么时候”在那的（时间）。
+一个完整的参考系，相当于在空间中布满了无数个<strong>已经对好时的同步时钟</strong>。当质点经过某个位置时，当地的时钟记录下时间，这样我们才能算出精确的速度和加速度。在爱因斯坦的相对论中，不同参考系的“时钟”甚至走得快慢都不一样！</p>
+</details>
+<hr>
+<h2 id="2-坐标系coordinate-system数学描述的网格">2. 坐标系（Coordinate System）：数学描述的“网格”
+</h2><h3 id="什么是坐标系">什么是坐标系？
+</h3><p>坐标系是<strong>附着在参考系上的数学工具</strong>，用于用一组数字（坐标）唯一标识空间中的位置。</p>
+<h3 id="它的数学意义是什么">它的数学意义是什么？
+</h3><ul>
+<li>将几何问题转化为代数计算。</li>
+<li><strong>同一参考系可以随意切换坐标系</strong>，这不会改变物理事实，只会改变你算题的痛苦程度。</li>
+<li><strong>高中常见类型</strong>：
+<ul>
+<li><strong>直角坐标系 $(x,y)$</strong>：最万能，适合平抛、斜抛运动。</li>
+<li><strong>自然坐标系（切向 $t$、法向 $n$）</strong>：高中圆周运动的最爱，切向管速度大小变化，法向管速度方向变化（向心加速度）。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="3-核心区分物理-vs-数学">3. 核心区分：物理 vs 数学
+</h2><p>这是最容易踩坑的地方，请记住以下核心区别：</p>
+<div class="table-wrapper"><table>
+	<thead>
+			<tr>
+					<th style="text-align: left">维度</th>
+					<th style="text-align: left">参考系（Reference Frame）</th>
+					<th style="text-align: left">坐标系（Coordinate System）</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td style="text-align: left"><strong>本质</strong></td>
+					<td style="text-align: left"><strong>物理</strong>观测基准（决定有没有惯性力）</td>
+					<td style="text-align: left"><strong>数学</strong>参数化工具（决定算起来麻不麻烦）</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>数量关系</strong></td>
+					<td style="text-align: left">一道题通常只选定<strong>一个</strong>主要参考系</td>
+					<td style="text-align: left">同一参考系中可以建立<strong>多个</strong>坐标系</td>
+			</tr>
+			<tr>
+					<td style="text-align: left"><strong>变换后果</strong></td>
+					<td style="text-align: left">换参考系 = 换观测者（物理规律可能改变）</td>
+					<td style="text-align: left">换坐标系 = 换计算视角（物理规律绝对不变）</td>
+			</tr>
+	</tbody>
+</table></div>
+<hr>
+<h2 id="4-实战解题策略先定舞台再铺网格">4. 实战解题策略：先定舞台，再铺网格
+</h2><p>在做复杂的运动学或动力学大题时，养成以下两步走的习惯：</p>
+<p><strong>第一步：定参考系（选舞台）</strong></p>
+<ul>
+<li>问自己：我要以谁为观察者？</li>
+<li>默认选<strong>地面</strong>（惯性系），这样牛顿第二定律 $\sum \vec{F} = m\vec{a}$ 直接无脑用。</li>
+<li>如果选加速的斜面或车厢（非惯性系），一定要记得在受力分析图上画出<strong>惯性力</strong>（$\vec{F}<em>{惯} = -m\vec{a}</em>{系}$）。</li>
+</ul>
+<p><strong>第二步：选坐标系（铺网格）</strong></p>
+<ul>
+<li>问自己：怎么建系能让分解的力最少、方程最简单？</li>
+<li><strong>斜面问题</strong>：沿斜面和垂直斜面建系（让支持力和摩擦力落在坐标轴上）。</li>
+<li><strong>圆周/曲线运动</strong>：用自然坐标系（切向和法向），直接套用 $F_n = m\frac{v^2}{R}$。</li>
+<li><strong>复杂相对运动</strong>：正交分解（直角坐标），硬解 $x$ 和 $y$ 方向。</li>
+</ul>
+<hr>
+<h2 id="5-结语锚与尺">5. 结语：锚与尺
+</h2>
+    <blockquote>
+        <p><strong>参考系是物理的“锚”，坐标系是数学的“尺”。</strong><br>
+先抛锚定基准，再拉尺量世界。</p>
+
+    </blockquote>
+<p>分清参考系与坐标系，不仅仅是为了咬文嚼字，更是为了培养严谨的物理直觉。当你在草稿纸上画下第一个受力分析图时，在心里默默问自己一句：“我的锚抛在哪了？我的尺是怎么画的？”</p>
+<p>这，就是学好力学的第一步。</p>
+<hr>
+
+</section>
+
+
+    <footer class="article-meta article-footer">
+    
+
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcaxI56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/mhchem.min.js"integrity="sha384-Vu5CUg3i7MAx3GAcG4TjgE2Gqsl3O0Np&#43;0L0LgB2rESlx3gpPH5rs1uADKdzOzM"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+
+        <script
+    src="https://giscus.app/client.js"
+    data-repo="H-He-1-2/H-He-1-2-deploy"
+    data-repo-id="R_kgDOSlBNtQ"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOSlBNtc4C9rmI"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('dark_dimmed');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 H-He-1-2
+    </section>
+    
+    <section class="powerby">
+         <br />
+        
+    </section>
+</footer>
+
+
+    
+
+
+
+<script type="module">
+    import gallery from '\/ts\/gallery.js';
+
+    const articleContent = document.querySelector('.article-content');
+    const shouldLoad = articleContent && (articleContent.querySelectorAll('figure').length > 0 || articleContent.querySelectorAll('img.gallery-image').length > 0);
+    
+    if (shouldLoad) {
+        gallery(articleContent);
+
+        const PhotoSwipeLightbox = (await import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js")).default;
+        const styleHref = "https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.css";
+
+        const styleTag = document.createElement('link');
+        styleTag.rel = 'stylesheet';
+        styleTag.href = styleHref;
+        document.head.appendChild(styleTag);
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallerySelector: '.article-content',
+            childSelector: 'figure a.image-link',
+            pswpModule: () => import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js")
+        });
+        lightbox.init();
+    }
+</script>
+
+    
+
+            </main>
+        </div>
+        
+<script type="text/javascript" src="/ts/main.d00997a2f4a6ce525f496da0c3ae6ad392b0468b8a9024f23309fdfc75c67a35.js" defer></script>
+
+
+    </body>
+</html>
